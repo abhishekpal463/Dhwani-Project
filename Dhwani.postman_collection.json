@@ -1,0 +1,381 @@
+{
+	"info": {
+		"_postman_id": "3bf7a6a9-da8b-4283-9a95-5adb2039d39a",
+		"name": "Dhwani",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Admin Signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"aman@email.com\",\r\n    \"password\":\"123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/admin/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"admin",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Admin Signin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"aman@email.com\",\r\n    \"password\":\"123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/admin/signin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"admin",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Child",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFtYW5AZW1haWwuY29tIiwiYWRtaW5JZCI6IjYxMmVmZWE0MjQ5YzA4MTY1YzZhM2ZkZSIsImlhdCI6MTYzMDQ2OTkwNiwiZXhwIjoxNjMwNDczNTA2fQ.6YYfeGDYfJoT30WwqAaqB2jvdZsAzWQ4tC07EuFehi8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Ankit",
+							"type": "text"
+						},
+						{
+							"key": "sex",
+							"value": "Male",
+							"type": "text"
+						},
+						{
+							"key": "fname",
+							"value": "Mohan",
+							"type": "text"
+						},
+						{
+							"key": "mname",
+							"value": "Radha",
+							"type": "text"
+						},
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/Abhishek pal/Pictures/kid3.jpg"
+						},
+						{
+							"key": "state",
+							"value": "Uttar Pradesh",
+							"type": "text"
+						},
+						{
+							"key": "district",
+							"value": "Kanpur",
+							"type": "text"
+						},
+						{
+							"key": "dob",
+							"value": "2015-08-18",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/child/adddetails",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"child",
+						"adddetails"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add State",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFtYW5AZW1haWwuY29tIiwiYWRtaW5JZCI6IjYxMmVmZWE0MjQ5YzA4MTY1YzZhM2ZkZSIsImlhdCI6MTYzMDQ2OTkwNiwiZXhwIjoxNjMwNDczNTA2fQ.6YYfeGDYfJoT30WwqAaqB2jvdZsAzWQ4tC07EuFehi8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"state\":\"Karnataka\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/admin/addstate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"admin",
+						"addstate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add District",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFtYW5AZW1haWwuY29tIiwiYWRtaW5JZCI6IjYxMmVmZWE0MjQ5YzA4MTY1YzZhM2ZkZSIsImlhdCI6MTYzMDQ2OTkwNiwiZXhwIjoxNjMwNDczNTA2fQ.6YYfeGDYfJoT30WwqAaqB2jvdZsAzWQ4tC07EuFehi8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"district\":\"Mysore\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/admin/612efff89ce36f1fb0e016b4/adddistrict",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"admin",
+						"612efff89ce36f1fb0e016b4",
+						"adddistrict"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get States",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFtYW5AZW1haWwuY29tIiwiYWRtaW5JZCI6IjYxMmVmZWE0MjQ5YzA4MTY1YzZhM2ZkZSIsImlhdCI6MTYzMDQ2OTkwNiwiZXhwIjoxNjMwNDczNTA2fQ.6YYfeGDYfJoT30WwqAaqB2jvdZsAzWQ4tC07EuFehi8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"district\":\"Agra\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/admin/getstate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"admin",
+						"getstate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Districts",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFtYW5AZW1haWwuY29tIiwiYWRtaW5JZCI6IjYxMmVmZWE0MjQ5YzA4MTY1YzZhM2ZkZSIsImlhdCI6MTYzMDQ2OTkwNiwiZXhwIjoxNjMwNDczNTA2fQ.6YYfeGDYfJoT30WwqAaqB2jvdZsAzWQ4tC07EuFehi8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"district\":\"Agra\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/admin/getdistrict",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"admin",
+						"getdistrict"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Details of Children",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFtYW5AZW1haWwuY29tIiwiYWRtaW5JZCI6IjYxMmVmZWE0MjQ5YzA4MTY1YzZhM2ZkZSIsImlhdCI6MTYzMDQ2OTkwNiwiZXhwIjoxNjMwNDczNTA2fQ.6YYfeGDYfJoT30WwqAaqB2jvdZsAzWQ4tC07EuFehi8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"district\":\"Agra\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/child/showdetails",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"child",
+						"showdetails"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Child Image",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/child/image/show/3f084419c7ed2255fb6bd9eaa49e46bb.jpeg",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"child",
+						"image",
+						"show",
+						"3f084419c7ed2255fb6bd9eaa49e46bb.jpeg"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
